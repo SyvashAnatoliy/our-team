@@ -139,27 +139,30 @@
         margin: 20px 0;
       }
 
-      button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50px;
+      hr {
+        width: 20%;
+        height: 4px;
+        margin-bottom: 25px;
+        border: none;
         background-color: $secondary-color;
-        color: $primary-color;
-        font-family: fonts.$third-family;
-        font-size: 16px;
+      }
+
+      button {
         text-transform: uppercase;
-        border-radius: 5px;
+        color: $color-h3-hero;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 14px;
+        font-family: fonts.$third-family;
+        border-radius: 0px;
+        border: 1px solid $secondary-color;
         cursor: pointer;
-        text-decoration: none;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
-          background-color: darken($secondary-color, 10%);
-          color: #fff;
-          transition: all 0.3s ease-in-out;
+          border-color: $secondary-color;
+          color: $secondary-color;
         }
       }
-      
     }
   }
